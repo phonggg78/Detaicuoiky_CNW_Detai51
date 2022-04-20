@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Home.js"></script>
+    <link rel="stylesheet" href="../css/productintro.css">
+    <style>
+    body{
+            background-color: azure;
+        }
+        .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+    .dropdown{
+   position: relative;
+   display: inline-block;
+        }
+   .dropdown-content{
+   display: none;
+   position: absolute;
+   background-color: #f5f5f5;
+   z-index: 1;
+   list-style: none;
+}
+
+.dropdown:hover .dropdown-content{
+   display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="">  
+        <header>
+            <div class="col-md-12 bg-success" style="background-color: azure;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/Home.html" id="dn"><img src="../img/logo.jpg" alt=""></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown"><img src="../img/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                  <li class="bg-danger"><a href="../html/Rau.html">Rau</a></li>
+                                  <li class="bg-danger"><a href="../html/TraiCay.html">Trái cây</a></li>
+                                </ul></li>
+                            <li><a href="../html/Contact.html" id=""><img src="../img/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                       
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../img/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" id="dn"><img src="../img/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn"><img src="../img/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" id="btnShop"><img src="../img/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+    
+    <div  class="container" style="width: 100%; background-color:azure;">
+        
+        <div id="carousel-simple" class="carousel slide col-md-6 col-md-offset-3" data-ride="carousel" >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-simple" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-simple" data-slide-to="1"></li>
+            <li data-target="#carousel-simple" data-slide-to="2"></li>
+            <li data-target="#carousel-simple" data-slide-to="3"></li>
+          </ol>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-simple" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </a>
+          <a class="right carousel-control" href="#carousel-simple" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+
+      <div class="container">
+        <div style="width: 50%; height: 100%; float: left;;">
+            <img src="../img/slide3.PNG" alt="">
+        </div>
+        <div style="width: 50%; height: 100%; float: left;;">
+           <h2 class="text-center">CHÀO MỪNG ĐẾN VỚI BÁC TÔM</h2>
+           <h3 class="text-center">Bác Tôm xin gửi lời chào thân ái !</h3>
+             <p class="text-center">Thuận tự nhiên là chỉ tôn của chúng tôi trong quá trình chăn nuôi, trồng cấy các sản phẩm để cung cấp cho người tiêu dùng tại hệ thống chuỗi thực phẩm sạch Bác Tôm.</p>
+             <p class="text-center">Sản phẩm thuận tự nhiên có thông tin nguồn gốc, quá  rình nuôi trồng, sản phẩm được công khai minh bạch theo thời gian thực trên từng sản phẩm</p>
+        </div>
+   </div>
+   <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+
+      <div class="container"> 
+          <h1>Rau</h1>
+          <div class="col-sm-6 col-md-4"> 
+            <div class="products"> <img style="width: 100%" src="../img/rau1.PNG" alt=""> 
+             <div class="products-details animate"> 
+              <div class="products-header"> 
+               <h1> Mướp hương </h1>
+               <h3>Mướp hương có vị thơm ngát, ăn ngọt mát.</h3>
+               <h3>Công dụng:Tất cả bộ phận của mướp đều là thảo dược.</h3> 
+               <h3> Giá: 3.700 đ </h3> 
+              </div> 
+              <div class="products-detail"> 
+               <p></p> 
+               <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <div class="col-sm-6 col-md-4"> 
+            <div class="products"> <img style="width: 100%" src="../img/rau2.PNG" alt=""> 
+             <div class="products-details animate"> 
+              <div class="products-header"> 
+               <h1> Rau cải </h1> 
+               <h3>Cải ngọt là một trong những loại giống thuộc họ nhà cả dễ ăn và được nhiều người yêu thích.</h3>
+               <h3>Công dụng: trường vị, chữa các bệnh ho, táo bón, ngăn ngừa trị và ung thư ruột kết.</h3>
+               <h3> Giá: 37.000 đ </h3> 
+              </div> 
+              <div class="products-detail"> 
+               <p></p> 
+               <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <div class="col-sm-6 col-md-4"> 
+            <div class="products"> <img style="width: 100%" src="../img/rau4.PNG" alt=""> 
+             <div class="products-details animate"> 
+              <div class="products-header"> 
+               <h1> Rau dền </h1> 
+               <h3>Rau dền là một những loại rau có rất nhiều lợi ích cho cơ thể.</h3>
+               <h3>Công dụng: chống lại các gốc tự do có hại và ngăn chặn sự hình thành của các tế bào ác tính gây ra ung thư.</h3>
+               <h3> Giá: 3.700 đ </h3> 
+              </div> 
+              <div class="products-detail"> 
+               <p></p> 
+               <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+       </div>
+       <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+      <div class="container"> 
+       <h1>Trái cây</h1>
+       <div class="row"> 
+        <div class="col-sm-6 col-md-4"> 
+         <div class="products"> <img style="width: 100%" src="../img/tc1.PNG" alt=""> 
+          <div class="products-details animate"> 
+           <div class="products-header"> 
+            <h1> Dưa hấu </h1>
+            <h3>Trong dưa hấu, hơn 90% là nước, đó là lý do khi ăn bạn sẽ cảm thấy nhanh no.</h3>
+            <h3>Công dụng: cung cấp năng lượng, chống mất nước trong ngày hè, cải thiện tiêu hóa.</h3> 
+            <h3> Giá: 31.000 đ </h3> 
+           </div> 
+           <div class="products-detail">      
+            <div class="social"> <a href="../html/TraiCay.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="col-sm-6 col-md-4"> 
+         <div class="products"> <img style="width: 100%" src="../img/tc1.PNG" alt=""> 
+          <div class="products-details animate"> 
+           <div class="products-header"> 
+            <h1> Dưa hấu </h1>
+            <h3>Trong dưa hấu, hơn 90% là nước, đó là lý do khi ăn bạn sẽ cảm thấy nhanh no.</h3>
+            <h3>Công dụng: cung cấp năng lượng, chống mất nước trong ngày hè, cải thiện tiêu hóa.</h3> 
+            <h3> Giá: 31.000 đ </h3> 
+           </div> 
+           <div class="products-detail"> 
+            <div class="social"> <a href="" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="col-sm-6 col-md-4"> 
+         <div class="products"> <img style="width: 100%" src="../img/tc1.PNG" alt=""> 
+          <div class="products-details animate"> 
+           <div class="products-header"> 
+            <h1> Dưa hấu </h1>
+            <h3>Trong dưa hấu, hơn 90% là nước, đó là lý do khi ăn bạn sẽ cảm thấy nhanh no.</h3>
+            <h3>Công dụng: cung cấp năng lượng, chống mất nước trong ngày hè, cải thiện tiêu hóa.</h3> 
+            <h3> Giá: 31.000 đ </h3> 
+           </div> 
+           <div class="products-detail"> 
+            <div class="social"> <a href="../html/TraiCay.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div>
+    </div>
+
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+    <div class="container"> 
+       <h1>Bán nhiều nhất</h1>
+       <div class="col-sm-6 col-md-4"> 
+        <div class="products"> <img style="width: 100%" src="../img/rau1.PNG" alt=""> 
+         <div class="products-details animate"> 
+          <div class="products-header"> 
+           <h1> Mướp hương </h1>
+           <h3>Mướp hương có vị thơm ngát, ăn ngọt mát.</h3>
+           <h3>Công dụng:Tất cả bộ phận của mướp đều là thảo dược.</h3> 
+           <h3> Giá: 3.700 đ </h3> 
+          </div> 
+          <div class="products-detail"> 
+           <p></p> 
+           <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-sm-6 col-md-4"> 
+        <div class="products"> <img style="width: 100%" src="../img/rau2.PNG" alt=""> 
+         <div class="products-details animate"> 
+          <div class="products-header"> 
+           <h1> Rau cải </h1> 
+           <h3>Cải ngọt là một trong những loại giống thuộc họ nhà cả dễ ăn và được nhiều người yêu thích.</h3>
+           <h3>Công dụng: trường vị, chữa các bệnh ho, táo bón, ngăn ngừa trị và ung thư ruột kết.</h3>
+           <h3> Giá: 37.000 đ </h3> 
+          </div> 
+          <div class="products-detail"> 
+           <p></p> 
+           <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-sm-6 col-md-4"> 
+        <div class="products"> <img style="width: 100%" src="../img/rau4.PNG" alt=""> 
+         <div class="products-details animate"> 
+          <div class="products-header"> 
+           <h1> Rau dền </h1> 
+           <h3>Rau dền là một những loại rau có rất nhiều lợi ích cho cơ thể.</h3>
+           <h3>Công dụng: chống lại các gốc tự do có hại và ngăn chặn sự hình thành của các tế bào ác tính gây ra ung thư.</h3>
+           <h3> Giá: 3.700 đ </h3> 
+          </div> 
+          <div class="products-detail"> 
+           <p></p> 
+           <div class="social"> <a href="../html/Rau.html" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="" class="social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="" class="social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+    </div>
+       <div>
+        <footer >
+            <div class="col-md-12" style="background-color: #333;color: #f5f5f5;">  
+                <div style="background-color: black;">
+                    <div class="col-md-4" >
+                        <h2><img src="../img/trangchu/TC.PNG" alt=""></h2>
+                        <p>12, Nguyễn Văn Bảo,Phường 4 , quận Gò Vấp,TP.HCM</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                        <p>Chính sách thẻ thành viên </p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Hướng dẫn mua hàng</p>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+       </div>
+
+    <div class="modal fade" id="logInModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 style="text-align: center;">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtUserName" class="control-label col-xs-3">UserName</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtUserName" placeholder="UserNamme">
+                                <span id="tbUserName" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPass" class="control-label col-xs-3">PassWord</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" id="txtPass" placeholder="PassWord">
+                                <span id="tbPass" class="text-danger">*</span>
+                            </div>
+                        </div>
+                       
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Đăng nhập </button> 
+                    </form>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.fixedBox {    
+    position: fixed;
+    background: transparent;
+    width: 300px;  
+    top:0px;
+    right:10px;
+}
+.fixedBox .row, .fixedBox .header {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 10px;
+    text-align: left;
+    background: #e6e6e6;
+    border-bottom: 1px solid white; 
+}
+.fixBox .header {cursor:pointer;}
+.animate {
+    -webkit-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.animate:nth-child(odd){   
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(700px) rotateX(-90deg);
+  -moz-transform-origin: top;
+  -moz-transform: perspective(700px) rotateX(-90deg);
+  -ms-transform-origin: top;
+  -ms-transform: perspective(700px) rotateX(-90deg);
+  -o-transform-origin: top;
+  -o-transform: perspective(700px) rotateX(-90deg);
+  transform-origin: top;
+  transform: perspective(700px) rotateX(-90deg);
+}
+.animate:nth-child(even){
+   margin-top:-65px;
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(700px) rotateX(90deg);
+  -moz-transform-origin: bottom;
+  -moz-transform: perspective(700px) rotateX(90deg);
+  -ms-transform-origin: bottom;
+  -ms-transform: perspective(700px) rotateX(90deg);
+  -o-transform-origin: bottom;
+  -o-transform: perspective(700px) rotateX(90deg);
+  transform-origin: bottom;
+  transform: perspective(700px) rotateX(90deg);
+}
+.fixedBox:hover .animate:nth-child(odd){
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(700px) rotateX(0deg);
+  -moz-transform-origin: top;
+  -moz-transform: perspective(700px) rotateX(0deg);
+  -ms-transform-origin: top;
+  -ms-transform: perspective(700px) rotateX(0deg);
+  -o-transform-origin: top;
+  -o-transform: perspective(700px) rotateX(0deg);
+  transform-origin: top;
+  transform: perspective(700px) rotateX(0deg);
+  margin-top:0;
+}
+.fixedBox:hover .animate:nth-child(even){
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(700px) rotateX(0deg);
+  -moz-transform-origin: bottom;
+  -moz-transform: perspective(700px) rotateX(0deg);
+  -ms-transform-origin: bottom;
+  -ms-transform: perspective(700px) rotateX(0deg);
+  -o-transform-origin: bottom;
+  -o-transform: perspective(700px) rotateX(0deg);
+  transform-origin: bottom;
+  transform: perspective(700px) rotateX(0deg);
+   margin-top:0;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        let i = 0
+
+        let sp1 = {tensp:"Sản phẩm 1", hinhanh:"../img/rau1.PNG", soluong:1, dongia:3700}
+        let sp2 = {tensp:"Sản phẩm 2", hinhanh:"../img/rau2.PNG", soluong:1, dongia:37000}
+        let sp3 = {tensp:"Sản phẩm 3", hinhanh:"../img/rau4.PNG", soluong:1, dongia:3700}
+        let sp4 = {tensp:"Sản phẩm 4", hinhanh:"../img/tc2.PNG", soluong:1, dongia:25000}
+        let sp5 = {tensp:"Sản phẩm 5", hinhanh:"../img/tc1.PNG", soluong:1, dongia:31000}
+        
+       
+
+        let dssp = [sp1, sp2, sp3, sp4, sp5]
+
+
+        function napDSSP(dssp){
+            dssp.forEach(sp => {
+                let row = "<tr><td class='text-center'>"+(++i)+"</td><td>"+sp.tensp+"</td><td><img src='"+sp.hinhanh+"' width='150' alt='Hinh anh'></td><td contenteditable='true' onkeyup='getTongtien()'>"+sp.soluong+"</td><td class='text-right'>"+sp.dongia+"</td></tr>"
+
+                let myTable = document.getElementById("tbl")
+
+                let newRow = myTable.insertRow(myTable.rows.length)
+
+                newRow.innerHTML  = row
+
+            });
+        }
+
+        function getTongtien(){
+            let tongtien = 0
+            let myTable = document.getElementById("tbl")
+            let rows = myTable.rows.length
+
+            for(let i = 0; i < rows; i++){
+                let soluong = myTable.rows[i].cells[3].innerHTML
+                let dongia = myTable.rows[i].cells[4].innerHTML
+
+                let thanhtien = soluong * dongia
+
+                tongtien += thanhtien
+            }
+
+            document.getElementById("total").innerHTML = tongtien
+        }
+
+        window.onload = function(){
+            napDSSP(dssp)
+
+            getTongtien()
+        }
+    </script>
+</head>
+<body>
+    <div class="">  
+        <header>
+            <div class="col-md-12 bg-success" style="background-color: azure;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/Home.html" id="dn"><img src="../img/logo.jpg" alt=""></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown"><img src="../img/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                  <li class="bg-danger"><a href="../html/Rau.html">Rau</a></li>
+                                  <li class="bg-danger"><a href="../html/TraiCay.html">Trái cây</a></li>
+                                </ul></li>
+                            <li><a href="../html/Contact.html" id=""><img src="../img/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                       
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../img/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" id="dn"><img src="../img/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn"><img src="../img/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" id="btnShop"><img src="../img/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+    <div class="container">
+        <table class="table table-hover table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>ten SP</th>
+                    <th>Hinh anh</th>
+                    <th>So luong</th>
+                    <th>Don gia</th>
+                </tr>
+            </thead>
+            <tbody id="tbl">
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"  class="text-right font-weight-bold">Tong thanh tien: </td>
+                    <td id="total" class="text-right font-weight-bold"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <footer >
+            <div class="col-md-12" style="background-color: #333;color: #f5f5f5;">  
+                <div style="background-color: black;">
+                    <div class="col-md-4" >
+                        <h2><img src="../img/trangchu/TC.PNG" alt=""></h2>
+                        <p>12, Nguyễn Văn Bảo,Phường 4 , quận Gò Vấp,TP.HCM</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                        <p>Chính sách thẻ thành viên </p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Hướng dẫn mua hàng</p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+       </div>
+</body>
+</html>

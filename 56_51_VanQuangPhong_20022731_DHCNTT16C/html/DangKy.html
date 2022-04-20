@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Home.js"></script>
+</head>
+<body>
+    <div class="">  
+        <header>
+            <div class="col-md-12 bg-success" style="background-color: azure;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/Home.html" id="dn"><img src="../img/logo.jpg" alt=""></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown"><img src="../img/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                  <li class="bg-danger"><a href="../html/Rau.html">Rau</a></li>
+                                  <li class="bg-danger"><a href="../html/TraiCay.html">Trái cây</a></li>
+                                </ul></li>
+                            <li><a href="../html/Contact.html" id=""><img src="../img/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                       
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../img/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" id="dn"><img src="../img/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn"><img src="../img/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" id="btnShop"><img src="../img/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+   <div class="container">
+       <div style="margin-top: 100px;">
+           <h1 class="text-center">ĐĂNG KÝ</h1>
+       </div>
+        <div>
+            <form>
+                <div class="form-group">
+                    <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="txtUserNameRegister" class="control-label col-md-3">UserName</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="txtUserNameRegister" placeholder="UserName">
+                        <span id="tbUserNameRegister" class="text-danger">*</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtPassRegister" class="control-label col-xs-3">PassWord</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="txtPassRegister" placeholder="PassWord">
+                        <span id="tbPassRegister" class="text-danger">*</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtPassConfirm" class="control-label col-xs-3">Confirm PassWord</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="txtPassConfirm" placeholder="ConfirmPassWord">
+                        <span id="tbPassConfirm" class="text-danger">*</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtEmailRegister" class="control-label col-xs-3">Email</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="txtEmailRegister" >
+                        <span id="tbEmailRegister" class="text-danger">*</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtPhoneRegister" class="control-label col-xs-3">Phone</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="txtPhoneRegister" placeholder="0-XXXXXXXXX">
+                        <span id="tbPhoneRegister" class="text-danger">*</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg btn-block">Đăng ký </button> 
+            </form>
+        </div>
+   </div>
+   <div style="margin-top: 15px;">
+    <footer >
+        <div class="col-md-12" style="background-color: #333;color: #f5f5f5;">  
+            <div style="background-color: black;">
+                <div class="col-md-4" >
+                    <h2><img src="../img/trangchu/TC.PNG" alt=""></h2>
+                    <p>12, Nguyễn Văn Bảo,Phường 4 , quận Gò Vấp,TP.HCM</p>
+                </div>
+                <div class="col-md-4">
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                        <p>Chính sách thẻ thành viên </p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Hướng dẫn mua hàng</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+   </div>
+</body>
+</html>

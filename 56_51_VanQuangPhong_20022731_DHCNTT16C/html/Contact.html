@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Home.js"></script>
+</head>
+<body>
+    <div class="">  
+        <header>
+            <div class="col-md-12 bg-success" style="background-color: azure;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/Home.html" id="dn"><img src="../img/logo.jpg" alt=""></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown"><img src="../img/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                  <li class="bg-danger"><a href="../html/Rau.html">Rau</a></li>
+                                  <li class="bg-danger"><a href="../html/TraiCay.html">Trái cây</a></li>
+                                </ul></li>
+                            <li><a href="../html/Contact.html" id=""><img src="../img/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                       
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../img/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" id="dn"><img src="../img/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn"><img src="../img/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" id="btnShop"><img src="../img/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+    <div class="container">
+        <h1 class="text-center">Gửi lời nhắn đến với chúng tôi!</h1>
+        <form role="form" class="form-horizontal">
+            <div class="form-group">
+                <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+            </div>
+            <div class="form-group">
+                <label for="txtName" class="control-label col-xs-3">Tên</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="txtName">
+                    <span id="tbName" class="text-danger">*</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtCompany" class="control-label col-xs-3">Công ty</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="txtCompany" placeholder="Company Name">
+                    <span id="tbCompany" class="text-danger">*</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtEmail" class="control-label col-xs-3">Email</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="txtEmail" >
+                    <span id="tbEmail" class="text-danger">*</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtPhone" class="control-label col-xs-3">Số điện thoại</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="txtPhone" placeholder="0-XXX-XXX-XXX">
+                    <span id="tbPhone" class="text-danger">*</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtMessage" class="control-label col-xs-3">Lời nhắn</label>
+                <div class="col-md-9">
+                    <textarea style="width: 850px; height: 100px;"></textarea>
+                    <span id="tbMessage" class="text-danger">*</span>
+                </div>
+            </div>
+            <button type="button" id="btnSave" class="btn btn-success btn-block">Gửi</button>
+        </form>
+    </div>
+    <div style="margin-top: 20px;">
+        <footer >
+            <div class="col-md-12" style="background-color: #333;color: #f5f5f5;">  
+                <div style="background-color: black;">
+                    <div class="col-md-4" >
+                        <h2><img src="../img/trangchu/trangchu.PNG" alt=""></h2>
+                        <p>12, Nguyễn Văn Bảo,Phường 4 , quận Gò Vấp,TP.HCM</p>
+                        <p>Hotline:666 666 666</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                        <p>Chính sách thẻ thành viên </p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Hướng dẫn mua hàng</p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+       </div>
+</body>
+</html>
